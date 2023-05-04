@@ -10,7 +10,7 @@ public class InterfazJuego extends javax.swing.JFrame {
     
     public InterfazJuego() {
         initComponents();
-        iFondo = new ImageIcon ( "src/Images/Fondo.png");
+        iFondo = new ImageIcon ( "src/Images/FondoJuego.png");
         iDimAux = new ImageIcon(iFondo.getImage().getScaledInstance(1270, 870, Image.SCALE_AREA_AVERAGING));
         jLabel1.setIcon(iDimAux);
     }
@@ -110,6 +110,11 @@ public class InterfazJuego extends javax.swing.JFrame {
         jButton1.setForeground(new java.awt.Color(255, 102, 102));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Menu.png"))); // NOI18N
         jButton1.setBorder(null);
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -162,7 +167,7 @@ public class InterfazJuego extends javax.swing.JFrame {
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 260, 870));
 
         jLabel1.setBackground(new java.awt.Color(224, 119, 0));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Fondo.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/FondoJuego.png"))); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(1270, 870));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1270, 930));
 
@@ -192,6 +197,11 @@ public class InterfazJuego extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+                  new Menu().setVisible(true);
+                  this.dispose();
+    }//GEN-LAST:event_jButton1MouseClicked
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {

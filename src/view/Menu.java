@@ -37,6 +37,8 @@ public class Menu extends javax.swing.JFrame {
         jLabel1.setText("MENU");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 27, -1, -1));
 
+        jButton1.setBackground(new java.awt.Color(255, 189, 102));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ImagenIniciar.png"))); // NOI18N
         jButton1.setText("Iniciar");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -45,6 +47,8 @@ public class Menu extends javax.swing.JFrame {
         });
         jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 105, 150, -1));
 
+        jButton2.setBackground(new java.awt.Color(255, 189, 102));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ImagenRegistrar.png"))); // NOI18N
         jButton2.setText("Registrarse");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -58,6 +62,8 @@ public class Menu extends javax.swing.JFrame {
         });
         jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 174, 150, -1));
 
+        jButton3.setBackground(new java.awt.Color(255, 189, 102));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ImagenInstrucciones.png"))); // NOI18N
         jButton3.setText("Instrucciones");
         jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -66,6 +72,8 @@ public class Menu extends javax.swing.JFrame {
         });
         jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 243, 150, -1));
 
+        jButton4.setBackground(new java.awt.Color(255, 180, 95));
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ImagenDetalles.png"))); // NOI18N
         jButton4.setText("Detalles");
         jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -74,13 +82,14 @@ public class Menu extends javax.swing.JFrame {
         });
         jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 312, 150, -1));
 
-        jButton5.setText("Salir");
+        jButton5.setBackground(new java.awt.Color(255, 189, 102));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ImagenSalir.png"))); // NOI18N
         jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton5MouseClicked(evt);
             }
         });
-        jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(241, 406, 113, -1));
+        jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 370, 113, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/FondoMenu.png"))); // NOI18N
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 370, 450));
@@ -100,15 +109,17 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        // TODO add your handling code here:
+                 new InterfazJuego().setVisible(true);
+                  this.dispose();
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-        // TODO add your handling code here:
+                 new Registro().setVisible(true);
+                  this.dispose();
     }//GEN-LAST:event_jButton2MouseClicked
 
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
@@ -120,7 +131,7 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4MouseClicked
 
     private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
-        // TODO add your handling code here:
+       System.exit(0);
     }//GEN-LAST:event_jButton5MouseClicked
 
   

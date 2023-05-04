@@ -87,7 +87,8 @@ public class Registro extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-     
+                    new Menu().setVisible(true);
+                    this.dispose();     
     }//GEN-LAST:event_jButton2MouseClicked
 
     public static void main(String args[]) {
