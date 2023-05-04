@@ -1,4 +1,10 @@
-
+/******************************************
+ * Autor: Zavaleta Cruz Jonathan Alexis   *  
+ * Fecha Creaciíon: 01/05/2023            *
+ * Fecha Actualización: 04:05:2023        *
+ * Descripción: Se creo la clase la cual  *
+ *            es el munu inicial del juego*
+ *****************************************/
 package view;
 
 

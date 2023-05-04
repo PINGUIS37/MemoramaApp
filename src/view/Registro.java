@@ -1,12 +1,16 @@
-
+/******************************************
+ * Autor: Zavaleta Cruz Jonathan Alexis   *  
+ * Fecha Creaciíon: 02/05/2023            *
+ * Fecha Actualización: 04:05:2023        *
+ * Descripción: Se creo la clase la cual  *
+ *              registrara a los jugadores*
+ *****************************************/
 package view;
 
 
 public class Registro extends javax.swing.JFrame {
 
-    /**
-     * Creamos un  nuevo Registro
-     */
+  
     public Registro() {
         initComponents();
     }
@@ -79,11 +83,11 @@ public class Registro extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        // TODO add your handling code here:
+      
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-        // TODO add your handling code here:
+     
     }//GEN-LAST:event_jButton2MouseClicked
 
     public static void main(String args[]) {
