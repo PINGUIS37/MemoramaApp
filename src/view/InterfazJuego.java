@@ -1,3 +1,9 @@
+/***************************************
+ * Autor: Yael Alberto Gómez Hernández *
+ * Fecha Creación: 01/05/2023          *
+ * Fecha Actualización: 4/05/2023      *
+ * Descripción: Interfaz del juego     *		 
+ **************************************/
 package view;
 
 import java.awt.Image;
