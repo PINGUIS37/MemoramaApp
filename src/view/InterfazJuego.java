@@ -87,26 +87,34 @@ public class InterfazJuego extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1270, 870));
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(224, 119, 0));
         jPanel1.setPreferredSize(new java.awt.Dimension(1270, 870));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel3.setBackground(new java.awt.Color(224, 119, 0));
+        jPanel3.setBackground(new java.awt.Color(189, 117, 44));
         jPanel3.setPreferredSize(new java.awt.Dimension(280, 870));
 
         jLabel5.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Tiempo:");
 
         jLabel6.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Puntaje:");
 
         jLabel7.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("  Nivel:");
 
-        jButton1.setBackground(new java.awt.Color(224, 119, 0));
+        jTextField4.setBackground(new java.awt.Color(189, 117, 44));
+        jTextField4.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(217, 148, 73)));
+
+        jTextField6.setBackground(new java.awt.Color(189, 117, 44));
+        jTextField6.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(217, 148, 73)));
+
+        jButton1.setBackground(new java.awt.Color(189, 117, 44));
         jButton1.setForeground(new java.awt.Color(255, 102, 102));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Menu.png"))); // NOI18N
         jButton1.setBorder(null);
@@ -120,6 +128,9 @@ public class InterfazJuego extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+
+        jTextField5.setBackground(new java.awt.Color(189, 117, 44));
+        jTextField5.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(217, 148, 73)));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -166,7 +177,7 @@ public class InterfazJuego extends javax.swing.JFrame {
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 260, 870));
 
-        jLabel1.setBackground(new java.awt.Color(224, 119, 0));
+        jLabel1.setBackground(new java.awt.Color(189, 117, 44));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/FondoJuego.png"))); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(1270, 870));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1270, 930));
@@ -183,7 +194,7 @@ public class InterfazJuego extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 870, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 80, Short.MAX_VALUE))
         );
 
         pack();

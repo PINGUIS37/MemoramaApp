@@ -36,6 +36,7 @@ public class Instrucciones extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Menu.png"))); // NOI18N
+        jButton1.setContentAreaFilled(false);
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
@@ -43,8 +44,9 @@ public class Instrucciones extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 590, 97, 60));
 
+        jLabel2.setBackground(new java.awt.Color(153, 0, 153));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ImagenInstruccion5.png"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 120, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 120, 170, -1));
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);

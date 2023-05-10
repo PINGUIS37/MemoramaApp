@@ -34,12 +34,13 @@ public class Menu extends javax.swing.JFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Liberation Sans", 1, 22)); // NOI18N
-        jLabel1.setText("MENU");
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 27, -1, -1));
+        jLabel1.setText("MEMORAMA");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, -1, -1));
 
         jButton1.setBackground(new java.awt.Color(255, 189, 102));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ImagenIniciar.png"))); // NOI18N
         jButton1.setText("Iniciar");
+        jButton1.setContentAreaFilled(false);
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
@@ -50,6 +51,7 @@ public class Menu extends javax.swing.JFrame {
         jButton2.setBackground(new java.awt.Color(255, 189, 102));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ImagenRegistrar.png"))); // NOI18N
         jButton2.setText("Registrarse");
+        jButton2.setContentAreaFilled(false);
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton2MouseClicked(evt);
@@ -65,6 +67,7 @@ public class Menu extends javax.swing.JFrame {
         jButton3.setBackground(new java.awt.Color(255, 189, 102));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ImagenInstrucciones.png"))); // NOI18N
         jButton3.setText("Instrucciones");
+        jButton3.setContentAreaFilled(false);
         jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton3MouseClicked(evt);
@@ -75,6 +78,7 @@ public class Menu extends javax.swing.JFrame {
         jButton4.setBackground(new java.awt.Color(255, 180, 95));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ImagenDetalles.png"))); // NOI18N
         jButton4.setText("Detalles");
+        jButton4.setContentAreaFilled(false);
         jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton4MouseClicked(evt);
@@ -84,6 +88,7 @@ public class Menu extends javax.swing.JFrame {
 
         jButton5.setBackground(new java.awt.Color(255, 189, 102));
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ImagenSalir.png"))); // NOI18N
+        jButton5.setContentAreaFilled(false);
         jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton5MouseClicked(evt);
@@ -106,6 +111,7 @@ public class Menu extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
