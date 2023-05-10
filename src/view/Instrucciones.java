@@ -1,6 +1,11 @@
-/*
-
- */
+/******************************************
+ * Autor: Herrera López Giovany           *  
+ * Fecha Creaciíon: 01/05/2023            *
+ * Fecha Actualización: 09:05:2023        *
+ * Descripción: Se creo la clase la cual  *
+ *              contiene las instrucciones* 
+ *              del juego                 *
+ *****************************************/
 package view;
 
 public class Instrucciones extends javax.swing.JFrame {
@@ -48,13 +53,15 @@ public class Instrucciones extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ImagenInstruccion5.png"))); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 120, 170, -1));
 
+        jTextArea1.setBackground(new java.awt.Color(204, 255, 255));
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jTextArea1.setText("1- Al principio de la partida todas \n   las  cartas tenfran que estar \n   boca abajo");
         jScrollPane1.setViewportView(jTextArea1);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(292, 132, -1, -1));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, -1, -1));
 
+        jTextArea2.setBackground(new java.awt.Color(204, 255, 255));
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
         jTextArea2.setText("2-El jugador voltea 2 cartas \n   en este caso con diferentes ");
@@ -65,19 +72,21 @@ public class Instrucciones extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ImagenInstruccion2.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(655, 120, -1, -1));
 
+        jTextArea3.setBackground(new java.awt.Color(255, 204, 102));
         jTextArea3.setColumns(20);
         jTextArea3.setRows(5);
         jTextArea3.setText("3-Como las 2 cartas son difentes el \n   jugador las vuelve a esconder ");
         jScrollPane3.setViewportView(jTextArea3);
 
-        jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(292, 390, 283, 111));
+        jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 450, 283, 111));
 
+        jTextArea4.setBackground(new java.awt.Color(255, 204, 102));
         jTextArea4.setColumns(20);
         jTextArea4.setRows(5);
         jTextArea4.setText("4-El jugador debe volver a voltear 2 y si\n   son iguales el jugador a hecho una \n   pareja ");
         jScrollPane4.setViewportView(jTextArea4);
 
-        jPanel1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(899, 362, 283, 108));
+        jPanel1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 460, 283, 108));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ImagenInstruccion3.png"))); // NOI18N
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 355, -1, -1));
@@ -111,26 +120,36 @@ public class Instrucciones extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        // TODO add your handling code here:
+                   new Menu().setVisible(true);
+                  this.dispose();
     }//GEN-LAST:event_jButton1MouseClicked
 
     public static void main(String args[]) {
       
         try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+            for (javax.swing.UIManager.LookAndFeelInfo info :
+                    javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Instrucciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger
+        (Instrucciones.class.getName()).
+                    log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Instrucciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger
+        (Instrucciones.class.getName()).
+                    log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Instrucciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger
+        (Instrucciones.class.getName()).
+                    log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Instrucciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger
+        (Instrucciones.class.getName()).
+                    log(java.util.logging.Level.SEVERE, null, ex);
         }
 
         java.awt.EventQueue.invokeLater(new Runnable() {

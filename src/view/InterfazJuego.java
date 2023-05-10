@@ -1,3 +1,11 @@
+/******************************************
+ * Autor: Gómez Hernández Yael Alberto    *  
+ * Fecha Creaciíon: 01/05/2023            *
+ * Fecha Actualización: 09:05:2023        *
+ * Descripción: Se creo la clase la cual  *
+ *            es la pantalla de juego     *
+ *****************************************/
+
 package view;
 
 import java.awt.Image;
@@ -11,7 +19,8 @@ public class InterfazJuego extends javax.swing.JFrame {
     public InterfazJuego() {
         initComponents();
         iFondo = new ImageIcon ( "src/Images/FondoJuego.png");
-        iDimAux = new ImageIcon(iFondo.getImage().getScaledInstance(1270, 870, Image.SCALE_AREA_AVERAGING));
+      iDimAux = new ImageIcon( 
+  iFondo.getImage().getScaledInstance(1270, 870, Image.SCALE_AREA_AVERAGING));
         jLabel1.setIcon(iDimAux);
     }
 @SuppressWarnings("unchecked")
@@ -186,15 +195,11 @@ public class InterfazJuego extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 1276, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 870, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 80, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 870, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();

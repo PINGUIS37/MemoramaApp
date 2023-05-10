@@ -87,7 +87,7 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="292" y="132" width="-1" height="-1"/>
+              <AbsoluteConstraints x="270" y="140" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
 
@@ -95,6 +95,9 @@
           <SubComponents>
             <Component class="javax.swing.JTextArea" name="jTextArea1">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="cc" type="rgb"/>
+                </Property>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
                 <Property name="text" type="java.lang.String" value="1- Al principio de la partida todas &#xa;   las  cartas tenfran que estar &#xa;   boca abajo"/>
@@ -116,6 +119,9 @@
           <SubComponents>
             <Component class="javax.swing.JTextArea" name="jTextArea2">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="cc" type="rgb"/>
+                </Property>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
                 <Property name="text" type="java.lang.String" value="2-El jugador voltea 2 cartas &#xa;   en este caso con diferentes "/>
@@ -141,7 +147,7 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="292" y="390" width="283" height="111"/>
+              <AbsoluteConstraints x="280" y="450" width="283" height="111"/>
             </Constraint>
           </Constraints>
 
@@ -149,6 +155,9 @@
           <SubComponents>
             <Component class="javax.swing.JTextArea" name="jTextArea3">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="66" green="cc" red="ff" type="rgb"/>
+                </Property>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
                 <Property name="text" type="java.lang.String" value="3-Como las 2 cartas son difentes el &#xa;   jugador las vuelve a esconder "/>
@@ -162,7 +171,7 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="899" y="362" width="283" height="108"/>
+              <AbsoluteConstraints x="900" y="460" width="283" height="108"/>
             </Constraint>
           </Constraints>
 
@@ -170,6 +179,9 @@
           <SubComponents>
             <Component class="javax.swing.JTextArea" name="jTextArea4">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="66" green="cc" red="ff" type="rgb"/>
+                </Property>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
                 <Property name="text" type="java.lang.String" value="4-El jugador debe volver a voltear 2 y si&#xa;   son iguales el jugador a hecho una &#xa;   pareja "/>
